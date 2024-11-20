@@ -1,18 +1,10 @@
+package StringLearning;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import static PatternLoops.ArrayExercise.arrayLiteral;
-
-//public class Main {
-//    public static void main(String[] args) {
-//
-//       // arrayLiteral();
-//
-//        arrayLiteral();
-
-class ShortestUniqueSubstring {
+public class ShortestUniqueSubstring {
     public static int solution(String S) {
-
         int shortestLength = Integer.MAX_VALUE;
         // Create a map to store the frequency of each substring
         Map<String, Integer> substringFrequency = new HashMap<>();
@@ -32,8 +24,6 @@ class ShortestUniqueSubstring {
         }
         return shortestLength;
     }
-
-
     public static void main(String[] args) {
         String[] testCases = {"abaaba"};
         // "zyzyzyz", "aabbbabaaa"
@@ -42,9 +32,3 @@ class ShortestUniqueSubstring {
         }
     }
 }
-
-
-
-//
-//    }
-//}

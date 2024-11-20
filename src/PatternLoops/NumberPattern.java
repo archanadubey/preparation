@@ -38,5 +38,6 @@ public class NumberPattern {
 
         li.remove(1);
         System.out.println(li);
+
     }
 }
