@@ -6,12 +6,15 @@ public class ValidParanthesis {
 
         // get the length of s
 
-      int   length = s.length();
+      int   length;
       do {
+
+          length = s.length();
           s = s.replace("()", "").replace("{}", "").replace("[]", "");
 
 
       }
+
         while ( length != s.length());
 
 //            if (s.isEmpty()){
