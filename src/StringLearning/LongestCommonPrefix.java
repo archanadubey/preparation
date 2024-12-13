@@ -51,8 +51,24 @@ public class LongestCommonPrefix {
     }
 
 
-        public static void main(String[] args) {
 
+    public static String removeConsecutiveCharacter(String S){
+
+
+        StringBuilder ab = new StringBuilder();
+        ;            for(int i=0; i< S.length()-1;i++) {
+            if(S.charAt(i) != S.charAt(i+1)){
+                ab.append(S.charAt(i));
+            }
+
+        }
+        ab.append(S.charAt(S.length()-1));
+       return ab.toString();
+
+    }
+
+        public static void main(String[] args) {
+            String S = "aabb";
             String [] s ={"class","clue","clove"};
             String [] string = {"flower","flow","flight"};
             String [] string1 = {"a"};
@@ -60,6 +76,7 @@ public class LongestCommonPrefix {
             System.out.println(commonPrefix(s));
             System.out.println(CommonPrefixUsingString(string));
             System.out.println(CommonPrefixUsingString(string1));
+            System.out.println("Removed Consecutive Character; "+removeConsecutiveCharacter(S));
 
     }
 
