@@ -26,12 +26,42 @@ public class LongestCommonPrefix {
 
     }
 
-        public static void main(String[] args) {
+    private static String CommonPrefixUsingString(String []strs) {
 
-       String [] s ={"class","clue","clove"};
-           // String s = "clove";
+        // Sort the String Arrays
 
-        System.out.println(commonPrefix(s));
+        Arrays.sort(strs);
+
+        String start = strs[0];//class
+        String end = strs[strs.length-1];//clue
+        int index = 0;
+
+        while (index<strs.length){
+
+            if(start.charAt(index) == end.charAt(index)) {
+
+                index++;
+            }else
+                break;
+        }
+           return start.substring(0,index);
+
+
 
     }
+
+
+        public static void main(String[] args) {
+
+            String [] s ={"class","clue","clove"};
+            String [] string = {"flower","flow","flight"};
+            String [] string1 = {"a"};
+
+            System.out.println(commonPrefix(s));
+            System.out.println(CommonPrefixUsingString(string));
+            System.out.println(CommonPrefixUsingString(string1));
+
+    }
+
+
 }
