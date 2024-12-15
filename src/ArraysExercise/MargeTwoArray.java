@@ -13,7 +13,7 @@ public class MargeTwoArray {
             arr3[i] = arr1[i];
         }
         for (int i = 0; i<arr2.length;i=i+1){
-            arr3[arr1.length+1] = arr2[i];
+            arr3[arr1.length+i] = arr2[i];
         }
 
         return Arrays.toString(arr3);
