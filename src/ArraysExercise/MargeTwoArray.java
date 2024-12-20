@@ -1,7 +1,7 @@
 package ArraysExercise;
 
 import java.util.Arrays;
-
+// Without using BuiltIn Function
 public class MargeTwoArray {
 
     public static String mergeBothArray(int [] arr1, int []arr2){
